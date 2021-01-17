@@ -1,0 +1,16 @@
+mode: ContinuousDeployment
+major-version-bump-message: '\.semver:\s?(breaking|major)'
+minor-version-bump-message: '\.semver:\s?(feature|minor)'
+patch-version-bump-message: '\.semver:\s?(fix|patch)'
+no-bump-message: '\.semver:\s?(none|skip)'
+assembly-informational-format: '{SemVer}'
+branches:
+  develop:
+    mode: ContinuousDeployment
+  feature:
+    mode: ContinuousDeployment
+  release:
+    mode: ContinuousDeployment
+ignore:
+  sha: []
+merge-message-formats: {}
